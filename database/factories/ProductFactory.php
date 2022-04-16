@@ -16,7 +16,7 @@ class ProductFactory extends Factory {
             'name' => $name,
             'short_description' => $this->faker->realText(),
             'long_description' => $this->faker->realText(500),
-            'product_image' => $this
+            'product_image' => 'products/' . $this
                 ->faker
                 ->image('storage/app/public/products', 640, 480, null, false, true, $this->faker->word),
         ];
